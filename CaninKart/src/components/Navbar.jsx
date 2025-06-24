@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
-import logo from "../assets/logo.png";
 import Productss from "../pages/productdata";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +33,7 @@ const Navbar = () => {
       <div className="max-w-[1500px] mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo - Left */}
         <NavLink to="/" className="flex items-center space-x-2">
-          <img src={logo} alt="Caninkart Logo" className="h-14 w-auto" />
+          <img src="/assets/logo.png" alt="Caninkart Logo" className="h-14 w-auto" />
         </NavLink>
 
         {/* Nav Links - Center */}

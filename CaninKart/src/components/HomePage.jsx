@@ -2,32 +2,31 @@ import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import ContactForm from "./contactForm";
-import Productss from "../pages/productdata";
+import Productss from '../pages/productdata';
 
 import { FaPaw } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import banner2 from "../assets/banner2.png";
-import hero2 from "../assets/caninkarthero.png";
-import hero3 from "../assets/herobanner2.png";
-import pupy from "../assets/pupy.png";
-import img11 from "../assets/pngwing.png";
+
+// import hero3 from "/assets/herobanner2.png";
+// import pupy from "/assets/pupy.png";
+// import img11 from "/assets/pngwing.png";
 import { Link, useNavigate } from "react-router-dom";
-import img1 from "../assets/Printed_Collar/4.png";
-import img2 from "../assets/Fur Lounger/24.png";
-import img3 from "../assets/Cave Hut - Grey/11.png";
-import img4 from "../assets/Jackets/4.png";
-import img5 from "../assets/dwt1.png";
+// import img1 from "/assets/Printed_Collar/4.png";
+// import img2 from "/assets/Fur Lounger/24.png";
+// import img3 from "/assets/Cave Hut - Grey/11.png";
+// import img4 from "/assets/Jackets/4.png";
+// import img5 from "/assets/dwt1.png";
 
 const HomePage = () => {
   const categories = [
-    { category: "WALKING ESSENTIALS", image: img1 },
-    { category: "BEDDING", image: img2 },
-    { category: "CAVE HUT", image: img3 },
-    { category: "JACKETS", image: img4 },
-    { category: "TOYS", image: img5 },
+    { category: "WALKING ESSENTIALS", image: '/assets/caninkarthero.png' },
+    { category: "BEDDING", image: '/assets/caninkarthero.png' },
+    { category: "CAVE HUT", image: '/assets/caninkarthero.png' },
+    { category: "JACKETS", image: '/assets/caninkarthero.png' },
+    { category: "TOYS", image: '/assets/caninkarthero.png' },
   ];
   const navigate = useNavigate();
 
@@ -41,25 +40,25 @@ const HomePage = () => {
     {
       name: "Atul ",
       city: "Dehradun",
-      img: img1,
+      img: '/assets/caninkarthero.png',
       text: 'The harness fits my dog perfectly, and the dog bed is super sturdy. Highly recommend to any pet parent who wants high-quality, well-designed accessories.',
     },
     {
       name: "Piyush",
       city: "Delhi",
-      img: img2,
+      img: '/assets/caninkarthero.png',
       text: 'They have good R&D team,successfully developed a complex dog sling harness for dogs suffering from IVDD. Good job team',
     },
     {
       name: "Ritika",
       city: "Mumbai",
-      img: img3,
+      img: '/assets/caninkarthero.png',
       text: 'They offer amazing, durable, and comfortable pet products. I highly recommend to buy these products. Thank you, Caninkar team',
     },
     {
       name: "Vishal",
       city: "Bijnor",
-      img: img3,
+      img: '/assets/caninkarthero.png',
       text: 'Fantastic service and the cutest products! My puppy is obsessed with the new bed.',
     },
   ];
@@ -102,13 +101,13 @@ const HomePage = () => {
       <div className=" md:relative overflow-hidden  text-center flex flex-col items-center mt-14 ">
         <img
           // src={img96 || "/placeholder.svg"}
-          src={hero2}
+          src='/assets/caninkarthero.png'
           alt="Product"
           className="w-full  mx-auto h-auto object-contain hidden md:flex "
         />
 
         <img
-          src={hero3 || "/placeholder.svg"}
+          src='/assets/caninkarthero.png'
           alt="Product"
           className="w-full h-auto object-contain md:hidden py-4"
         />
@@ -133,7 +132,7 @@ const HomePage = () => {
             >
               <div className="bg-[#ECDDC7] rounded-full px-5 py-5 md:h-52 md:w-52 h-40 w-40 ">
                 <img
-                  src={category.image}
+                  src='/assets/caninkarthero.png'
                   alt={category.category}
                   className="md:h-40 mx-auto object-contain"
                 />
@@ -223,13 +222,13 @@ const HomePage = () => {
       <div className="w-full max-w-[1400px] mx-auto ">
         <img
           // src={img96 || "/placeholder.svg"}
-          src={banner2}
+          src='/assets/banner2.png'
           alt="Product"
           className="w-full max-w-[1500px] mx-auto h-auto object-contain hidden md:flex p-4 "
         />
 
         <img
-          src={banner2 || "/placeholder.svg"}
+          src='/assets/caninkarthero.png'
           alt="Product"
           className="w-full h-auto object-contain md:hidden py-4"
         />
@@ -252,10 +251,10 @@ const HomePage = () => {
               >
                 <div className="w-full h-40 flex items-center justify-center bg-white">
                   <img
-                    src={product.image || img11}
+                    src='/assets/caninkarthero.png'
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = img11;
+                      e.target.src = '/assets/caninkarthero.png';
                     }}
                     alt={product.name}
                     className="max-h-full object-contain"
@@ -274,7 +273,7 @@ const HomePage = () => {
           <FaPaw /> ABOUT
         </h2>
         <section className="py-5 px-4  flex flex-col md:flex-row items-center justify-center md:gap-15">
-          <img src={pupy} alt="About Dog" className="h-70 " />
+          <img src='/assets/caninkarthero.png' alt="About Dog" className="h-70 " />
           <div>
             <p className="text-lg max-w-md">
               As a leading manufacturer and exporter of pet accessories,

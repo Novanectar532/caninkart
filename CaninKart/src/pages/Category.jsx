@@ -51,10 +51,11 @@ const Category = () => {
             >
               <div className="w-full h-40 flex items-center justify-center bg-white">
                 <img
-                  src={product.image || img11}
+                  // src={product.image || '/assets/pupy.png'}
+                  src={'/assets/pupy.png'}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = img11;
+                    e.target.src = '/assets/pupy.png';
                   }}
                   alt={product.name}
                   className="max-h-full object-contain"

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import img99 from '../assets/mpd.png'; // Your hero background image
-import img100 from '../assets/mpd2.png'
+// import img99 from '../assets/mpd.png'; // Your hero background image
+// import img100 from '../assets/mpd2.png'
 const cityNames = {
   1: "Amritsar", 2: "Ludhiana", 3: "Jalandhar", 4: "Delhi", 5: "Mumbai",
   6: "Chennai", 7: "Bengaluru", 8: "Kolkata", 9: "Hyderabad", 10: "Pune",
@@ -24,7 +24,7 @@ function MarketPlacedetails() {
       {/* Hero Section */}
     <section
   className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] bg-cover bg-bottom bg-no-repeat flex items-center justify-center px-4 sm:px-8"
-  style={{ backgroundImage: `url(${img99})` }}
+  style={{ backgroundImage: `url(${'/assets/mpd.png'}})` }}
 >
   {/* Back Button */}
   <div className="absolute top-4 left-4">
@@ -63,7 +63,7 @@ function MarketPlacedetails() {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img
-              src={img100} 
+              src='/assets/mpd.png'
               alt="Corgi dog"
               className="rounded shadow w-full  max-w-sm"
               loading="lazy"

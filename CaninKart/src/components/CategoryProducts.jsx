@@ -64,7 +64,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Productss from "../pages/productdata";
-import img11 from "../assets/pngwing.png";
+// import img11 from "/assets/pngwing.png";
 import { FaArrowLeft } from "react-icons/fa";
 
 const CategoryProducts = () => {

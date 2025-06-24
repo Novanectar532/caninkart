@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
-import placeholderImg from "../assets/ctf.png";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const DasNavbar = () => {
@@ -19,7 +17,7 @@ const DasNavbar = () => {
       <nav className="px-6 py-2 flex justify-between items-center max-w-[1400px] mx-auto">
         {/* Logo */}
         <Link to="/" className="w-28">
-          <img src={logo} alt="Logo" className="w-full object-contain" />
+          <img src="assets/logo.png" alt="Logo" className="w-full object-contain" />
         </Link>
 
         {/* Desktop Nav */}
@@ -46,7 +44,7 @@ const DasNavbar = () => {
         {/* Profile */}
         <div className="flex items-center gap-4">
           <img
-            src={placeholderImg}
+            src= '/assets/ctf.png'
             alt="User"
             className="w-10 h-10 rounded-full object-cover border"
           />

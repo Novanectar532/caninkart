@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import ContactForm from "../components/contactForm";
-import dog from "../assets/dogb1.png";
+// import dog from "../assets/dogb1.png";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -14,6 +14,7 @@ const Blog = () => {
           `${import.meta.env.VITE_BACKEND}/api/blogs`
         );
         setBlogs(res.data);
+        
       } catch (error) {
         console.error("Error fetching blogs:", error);
       }
@@ -56,7 +57,7 @@ const Blog = () => {
                     alt={blog.title}
                     onError={(e) => {
                       e.target.onerror = null; // prevent infinite loop if fallback also fails
-                      e.target.src = dog;
+                      e.target.src = '/assets/mpd.png';
                     }}
                     className="w-full h-64 object-cover "
                   />

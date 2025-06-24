@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import img12 from "../assets/Indiabanner.png";
+// import img12 from "../assets/Indiabanner.png";
 import { FaGreaterThan, FaLessThan, FaMapMarkerAlt } from "react-icons/fa";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import Swiper from "swiper/bundle";
@@ -148,7 +148,7 @@ const LocationHierarchy = () => {
 
       {/* Banner */}
       <div className="max-w-screen-2xl mx-auto">
-        <img src={img12} alt="India banner" className="w-full h-auto mx-auto" />
+        <img src='/assets/Indiabanner.png' alt="India banner" className="w-full h-auto mx-auto" />
       </div>
 
       <div className="bg-[#FFFDF4] max-w-screen-2xl mx-auto py-8">

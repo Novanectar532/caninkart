@@ -52,7 +52,7 @@ const ProductDetail = () => {
   const Thumbnail = ({ img, index, className = "" }) => (
     <img
       key={index}
-      src={img}
+      src='/assets/pupy.png'
       onClick={() => handleThumbnailClick(img)}
       onError={handleImageError}
       className={`object-contain rounded-md cursor-pointer bg-white p-1 transition-all ${
@@ -86,7 +86,7 @@ const ProductDetail = () => {
             {thumbnails.map((img, index) => (
               <Thumbnail
                 key={`desktop-${index}`}
-                img={img}
+                img='/assets/pupy.png'
                 index={index}
                 className="w-20 h-20 sm:w-32 sm:h-28"
               />
@@ -102,7 +102,7 @@ const ProductDetail = () => {
                 </div>
               ) : (
                 <img
-                  src={mainImage}
+                  src='/assets/pupy.png'
                   alt={`${product.name} - Main Product`}
                   onError={handleImageError}
                   className="w-full  object-fit rounded-md p-2"
@@ -115,7 +115,7 @@ const ProductDetail = () => {
               {thumbnails.map((img, index) => (
                 <Thumbnail
                   key={`mobile-${index}`}
-                  img={img}
+                  img='/assets/pupy.png'
                   index={index}
                   className="w-20 h-20 sm:w-32 sm:h-28 flex-shrink-0"
                 />

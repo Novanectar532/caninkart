@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import img12 from "../assets/Indiabanner.png";
-import img99 from '../assets/mpd.png'; 
+// import img12 from "../assets/Indiabanner.png";
+// import img99 from '../assets/mpd.png'; 
 import { TfiArrowTopRight } from "react-icons/tfi";
 
 const DistrictsPage = () => {

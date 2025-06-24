@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import dog from "../assets/ctf.png";
+import dog from "/assets/ctf.png";
 import { FaPaw } from "react-icons/fa";
 import axios from "axios";
 

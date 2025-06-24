@@ -2,7 +2,7 @@ import { FiPhone, FiMail } from "react-icons/fi";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import logo1 from "../assets/logo.png";
+import logo1 from "/assets/logo.png";
 
 const Footer = () => {
   return (

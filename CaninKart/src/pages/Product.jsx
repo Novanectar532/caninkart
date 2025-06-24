@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import img11 from "../assets/pngwing.png";
+// import img11 from "../assets/pngwing.png";
 import ContactForm from "../components/contactForm";
-import Productss from "./productdata";
+import Productss from "./productdata"; // Adjust the import path as necessary
 
 const Product = () => {
   const navigate = useNavigate();
@@ -34,10 +34,10 @@ const Product = () => {
               <p className="mt-2 text-lg font-medium">{product.name}</p> */}
               <div className="w-full h-40 flex items-center justify-center bg-white">
                               <img 
-                              src={product.image || img11}
+                              src={product.image || '/assets/mpd.png'}
                                 onError={(e) => {
                                   e.target.onerror = null;
-                                  e.target.src = img11;
+                                  e.target.src = '/assets/mpd.png';
                                 }}
                                 alt={product.name}
                                 className="max-h-full object-contain"
