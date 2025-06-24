@@ -7,7 +7,7 @@ import logo1 from "../assets/logo.png";
 const Footer = () => {
   return (
     <footer className="px-4 sm:px-6 pt-10 text-sm bg-white max-w-screen-2xl mx-auto">
-      <div className="grid gap-x-10 gap-y-5 md:grid-cols-2 lg:grid-cols-3 border-b px-10 py-5 max-w-[1500px] mx-auto ">
+      <div className="grid gap-x-10 gap-y-5 md:grid-cols-2 lg:grid-cols-3 border-b px-10 py-5 max-w-[1500px] mx-auto  ">
         {/* Logo & Description */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left ">
           <img src={logo1} alt="Caninkart" className="w-24 h-auto mb-3" />
@@ -46,8 +46,8 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-2 text-black text-lg">Legal</h4>
-            <ul className="space-y-1 ">
+            <h4 className="font-semibold mb-2 text-black text-center text-lg">Legal</h4>
+            <ul className="space-y-1 flex justify-center flex-col items-center md:items-start">
               {["Terms & Conditions", "Privacy Policy"].map((text, idx) => (
                 <li key={idx} className="hover:text-orange-500 text-base">
                   {text}
